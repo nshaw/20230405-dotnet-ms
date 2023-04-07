@@ -1,0 +1,46 @@
+# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.log
+*.user
+
+# .NET build cache
+/.dotnet/*
+
+# .vscode folder
+.vscode/
+
+# User-specific files
+*.suo
+*.userprefs
+*.bak
+
+# Visual Studio files
+*.csproj.user
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.sdf
+*.opensdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+*.sln.docstates
+
+# Resharper files
+_ReSharper*/
+
+# Rider files
+.idea*/
+*.sln.iml
+*.ipr
+*.iws
+
+# Build results of an Azure Pipelines build
+[Tt]est[Rr]esult*/
+*.testsettings

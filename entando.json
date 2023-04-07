@@ -1,0 +1,21 @@
+{
+    "microservices": [
+        {
+            "name": "dotnet-ms",
+            "stack": "custom",
+            "healthCheckPath": "/api/health",
+            "commands": {
+                "run": "dotnet run",
+                "build": "echo 'no-op build'",
+                "pack": "echo 'TODO pack'"
+            },
+            "version":"0.0.1"
+        }
+    ],
+    "microfrontends": [],
+    "svc": [],
+    "name": "20230406-dotnet-ms",
+    "version": "0.0.1",
+    "description": "20230406-dotnet-ms description",
+    "type": "bundle"
+}
