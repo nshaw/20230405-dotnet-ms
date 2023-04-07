@@ -7,7 +7,7 @@
             "commands": {
                 "run": "dotnet run",
                 "build": "echo 'no-op build'",
-                "pack": "echo 'TODO pack'"
+                "pack": "docker build -t dotnetms ."
             },
             "version":"0.0.1"
         }

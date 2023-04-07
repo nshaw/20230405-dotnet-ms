@@ -1,0 +1,28 @@
+# Start with the official .NET 6 SDK image
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the project file and restore dependencies
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copy the remaining source code and build the app
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+# Start with a minimal runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the output from the build environment to the runtime image
+COPY --from=build-env /app/out .
+
+# Expose the port number that the app listens on
+EXPOSE 8081
+
+# Start the app when the container starts
+ENTRYPOINT ["dotnet", "dotnetms.dll"]
