@@ -4,12 +4,13 @@
             "name": "dotnet-ms",
             "stack": "custom",
             "healthCheckPath": "/api/health",
+            "ingressPath":"/dotnetms",
             "commands": {
                 "run": "dotnet run",
                 "build": "echo 'no-op build'",
                 "pack": "docker build -t dotnetms ."
             },
-            "version":"0.0.1"
+            "version":"0.0.2"
         }
     ],
     "microfrontends": [],
