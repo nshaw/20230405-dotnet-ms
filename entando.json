@@ -16,7 +16,7 @@
     "microfrontends": [],
     "svc": [],
     "name": "20230406-dotnet-ms",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "20230406-dotnet-ms description",
     "type": "bundle"
 }
