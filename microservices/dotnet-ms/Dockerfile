@@ -22,6 +22,7 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 
 # Expose the port number that the app listens on
+ENV ASPNETCORE_URLS=http://*:8081
 EXPOSE 8081
 
 # Start the app when the container starts

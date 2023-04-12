@@ -4,19 +4,18 @@
             "name": "dotnet-ms",
             "stack": "custom",
             "healthCheckPath": "/api/health",
-            "ingressPath":"/dotnetms",
             "commands": {
                 "run": "dotnet run",
                 "build": "echo 'no-op build'",
                 "pack": "docker build -t dotnetms ."
             },
-            "version":"0.0.2"
+            "version":"0.0.8"
         }
     ],
     "microfrontends": [],
     "svc": [],
     "name": "20230406-dotnet-ms",
-    "version": "0.0.2",
+    "version": "0.0.8",
     "description": "20230406-dotnet-ms description",
     "type": "bundle"
 }
